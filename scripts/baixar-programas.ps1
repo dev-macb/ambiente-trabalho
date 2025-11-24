@@ -2,7 +2,7 @@
 winget install -e --id Git.Git                                # Controle de versão
 winget install -e --id 7zip.7zip                              # Gerenciador de arquivos compactados
 winget install -e --id OpenJS.NodeJS                          # Ambiente de execução JavaScript
-winget install -e --id Python.Python                          # Linguagem de programação Python
+winget install -e --id Python.Python.3.14                     # Linguagem de programação Python
 
 # Produtividade
 winget install -e --id Microsoft.VisualStudioCode             # Editor de código leve

@@ -1,0 +1,128 @@
+properties:
+  resources:
+
+    # ----------------------------------
+    # GERAL E DESENVOLVIMENTO
+    # ----------------------------------
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      directives:
+        description: Instalar o Git (Controle de Versão)
+      settings:
+        id: Git.Git
+        
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      directives:
+        description: Instalar o 7-Zip
+      settings:
+        id: 7zip.7zip
+        
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      directives:
+        description: Instalar o Node.js (Ambiente JavaScript)
+      settings:
+        id: OpenJS.NodeJS.LTS
+        
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      directives:
+        description: Instalar o Python (Versão 3 mais recente)
+      settings:
+        id: Python.Python.3.12
+        
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      directives:
+        description: Instalar o Visual Studio Code (Editor de Código)
+      settings:
+        id: Microsoft.VisualStudioCode
+        
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      directives:
+        description: Instalar o Visual Studio 2022 Community (IDE Completa)
+      settings:
+        id: Microsoft.VisualStudio.2022.Community
+        
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      directives:
+        description: Instalar o Docker Desktop (Gerenciador de Contêineres)
+      settings:
+        id: Docker.DockerDesktop
+
+    # ----------------------------------
+    # PRODUTIVIDADE E FERRAMENTAS
+    # ----------------------------------
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      directives:
+        description: Instalar o Google Chrome (Navegador Web)
+      settings:
+        id: Google.Chrome
+        
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      directives:
+        description: Instalar o Obsidian (Notas e Organização)
+      settings:
+        id: Obsidian.Obsidian
+        
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      directives:
+        description: Instalar o Starship (Prompt Customizável)
+      settings:
+        id: Starship.Starship
+        
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      directives:
+        description: Instalar o OBS Studio (Gravação e Streaming)
+      settings:
+        id: OBSProject.OBSStudio
+        
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      directives:
+        description: Instalar o LibreOffice (Suíte de Escritório)
+      settings:
+        id: TheDocumentFoundation.LibreOffice
+
+    # ----------------------------------
+    # DESIGN, CRIATIVIDADE E COMUNICAÇÃO
+    # ----------------------------------
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      directives:
+        description: Instalar o Figma (Design de Interfaces)
+      settings:
+        id: Figma.Figma
+        
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      directives:
+        description: Instalar o Insomnia (Teste de API)
+      settings:
+        id: Insomnia.Insomnia
+        
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      directives:
+        description: Instalar o Microsoft Teams (Comunicação)
+      settings:
+        id: Microsoft.Teams
+        
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      directives:
+        description: Instalar o Spotify (Streaming de Música)
+      settings:
+        id: Spotify.Spotify
+        
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      directives:
+        description: Instalar o WhatsApp (Mensagens)
+      settings:
+        id: WhatsApp.WhatsApp
+        
+    # ----------------------------------
+    # REDE E SEGURANÇA
+    # ----------------------------------
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      directives:
+        description: Instalar o Nmap (Scanner de Rede)
+      settings:
+        id: Insecure.Nmap
+        
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      directives:
+        description: Instalar o Wireshark (Analisador de Tráfego)
+      settings:
+        id: WiresharkFoundation.Wireshark

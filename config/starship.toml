@@ -1,7 +1,9 @@
 # ~/.config/starship.toml
 
-format = '''$username$directory$git_branch$nodejs$python$php$package
+
+format = '''$username$directory$git_branch$git_status$nodejs$python$php$package
 $character '''
+
 
 [username]
 format = '[Δ](#A52AFF bold) [$user]($style) '
@@ -9,6 +11,7 @@ disabled = false
 show_always = true
 style_root = 'red bold'
 style_user = 'white bold'
+
 
 [directory]
 format = '[em](#685AFF) $read_only[$path](#D1D1D1) '
@@ -18,12 +21,14 @@ truncation_length = 3
 use_os_path_sep = true
 truncation_symbol = '📁/'
 
+
 [git_branch]
 format = '[no](#685AFF) [$symbol $branch](#D1D1D1) '
 symbol = '[](#28B9FF)'
 
+
 [git_status]
-format     = '\($all_status$ahead_behind\)'
+format     = '$all_status$ahead_behind'
 stashed = '⭕ '
 up_to_date = '' #✅
 conflicted = '⛔ '
