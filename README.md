@@ -39,9 +39,21 @@ Para clonar o projeto para sua máquina via <a target="_blank" href="https://git
 
 
 ```bash
+New-Item -ItemType Directory -Path "$HOME\Documentos\Github" -Force | Out-Null
+Set-Location "$HOME\Documentos\Github"
+
+git config user.name "Miguel Alves"
+git config user.email "dev.macb@gmail.com"
+
 git clone https://github.com/dev-macb/ambiente-trabalho
+
+Set-Location .\ambiente-trabalho"
+.\scripts baixar-programas.ps1
+.\scripts setup.ps1
 ```
 <p align="center">🔷</p>
+
+> Para ativar unicode UTF-8 no PowerShell: Painel de Controle > Região > Aba Adminitrativo > Alterar localidade do sistema > Marcar `Beta: Usar Unicode UTF-8 para suporte linguagem mundial.
 
 
 ### ⚙️ Configuração Automatizada

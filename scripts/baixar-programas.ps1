@@ -1,3 +1,7 @@
+# ==================================================
+# Baixar Programas
+# ==================================================
+
 # Desenvolvimento
 winget install -e --id Git.Git                                # Controle de versão
 winget install -e --id 7zip.7zip                              # Gerenciador de arquivos compactados
